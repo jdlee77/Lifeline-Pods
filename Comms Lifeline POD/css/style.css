@@ -1,0 +1,44 @@
+body {
+  font-family: Arial, sans-serif;
+  background-color: #fcfbfb;
+  padding: 2px;
+}
+
+.image-set {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  margin-bottom: 5px;
+  background-color: #fff;
+  padding: 1px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+}
+
+.image-set img {
+  width: 64px; /* Adjust based on your preference */
+  height: 64px; /* Adjust to maintain aspect ratio */
+  margin: 2px;
+  border: 2px solid transparent;
+  border-radius: 4px;
+  transition: transform 0.3s ease, border-color 0.3s ease;
+}
+
+body[data-ishost="true"] .image-set img:hover {
+  transform: scale(1.1);
+  border-color: #007bff;
+  cursor: pointer;
+}
+
+/* Responsive design for smaller screens */
+@media (max-width: 600px) {
+  .image-set {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .image-set img {
+    width: 64px;
+    height: 64px;
+  }
+}

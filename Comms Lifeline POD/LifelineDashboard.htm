@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=.5" />
+    <title>Lifeline Dashboard</title>
+    <link rel="stylesheet" href="css/style.css" />
+    <script
+      src="lib/connect_customPodSDK.js"
+      type="application/javascript"></script>
+    <script src="js/script.js" defer></script>
+    <script src="js/syncScript.js" defer></script>
+  </head>
+  <body data-ishost="false">
+    <div class="image-set" id="set1">
+      <img
+        src="https://napsg-web.s3.amazonaws.com/symbology/data/PNG9/lifelines/Communications/communications-with-label-green-halo_64x64.png"
+        alt=""
+        onclick="cycleImage(this, 'set1')" />
+      <img
+        src="https://napsg-web.s3.amazonaws.com/symbology/data/PNG9/lifelines/Communications/communications-with-label-yellow-halo_64x64.png"
+        alt=""
+        onclick="cycleImage(this, 'set1')"
+        style="display: none" />
+      <img
+        src="https://napsg-web.s3.amazonaws.com/symbology/data/PNG9/lifelines/Communications/communications-with-label-red-halo_64x64.png"
+        alt=""
+        onclick="cycleImage(this, 'set1')"
+        style="display: none" />
+      <img
+        src="https://napsg-web.s3.amazonaws.com/symbology/data/PNG9/lifelines/Communications/communications-with-label-gray-halo_64x64.png"
+        alt=""
+        onclick="cycleImage(this, 'set1')"
+        style="display: none" />
+    </div>
+    <div class="image-set" id="set2">
+      <img
+        src="https://napsg-web.s3.amazonaws.com/symbology/data/PNG9/lifelines/Communications/communications_911-dispatch-green-halo_64x64.png"
+        alt=""
+        onclick="cycleImage(this, 'set2')" />
+      <img
+        src="https://napsg-web.s3.amazonaws.com/symbology/data/PNG9/lifelines/Communications/communications_911-dispatch-yellow-halo_64x64.png"
+        alt=""
+        onclick="cycleImage(this, 'set2')"
+        style="display: none" />
+      <img
+        src="https://napsg-web.s3.amazonaws.com/symbology/data/PNG9/lifelines/Communications/communications_911-dispatch-red-halo_64x64.png"
+        alt=""
+        onclick="cycleImage(this, 'set2')"
+        style="display: none" />
+      <img
+        src="https://napsg-web.s3.amazonaws.com/symbology/data/PNG9/lifelines/Communications/communications_911-dispatch-gray-halo_64x64.png"
+        alt=""
+        onclick="cycleImage(this, 'set2')"
+        style="display: none" />
+    </div>
+    <div class="image-set" id="set3">
+      <img
+        src="https://napsg-web.s3.amazonaws.com/symbology/data/PNG9/lifelines/Communications/communications_alerts-warnings-messages-green-halo_64x64.png"
+        alt=""
+        onclick="cycleImage(this, 'set3')" />
+      <img
+        src="https://napsg-web.s3.amazonaws.com/symbology/data/PNG9/lifelines/Communications/communications_alerts-warnings-messages-yellow-halo_64x64.png"
+        alt=""
+        onclick="cycleImage(this, 'set3')"
+        style="display: none" />
+      <img
+        src="https://napsg-web.s3.amazonaws.com/symbology/data/PNG9/lifelines/Communications/communications_alerts-warnings-messages-red-halo_64x64.png"
+        alt=""
+        onclick="cycleImage(this, 'set3')"
+        style="display: none" />
+      <img
+        src="https://napsg-web.s3.amazonaws.com/symbology/data/PNG9/lifelines/Communications/communications_alerts-warnings-messages-gray-halo_64x64.png"
+        alt=""
+        onclick="cycleImage(this, 'set3')"
+        style="display: none" />
+    </div>
+    <div class="image-set" id="set4">
+      <img
+        src="https://napsg-web.s3.amazonaws.com/symbology/data/PNG9/lifelines/Communications/communications_financial-services-green-halo_64x64.png"
+        alt=""
+        onclick="cycleImage(this, 'set4')" />
+      <img
+        src="https://napsg-web.s3.amazonaws.com/symbology/data/PNG9/lifelines/Communications/communications_financial-services-yellow-halo_64x64.png"
+        alt=""
+        onclick="cycleImage(this, 'set4')"
+        style="display: none" />
+      <img
+        src="https://napsg-web.s3.amazonaws.com/symbology/data/PNG9/lifelines/Communications/communications_financial-services-red-halo_64x64.png"
+        alt=""
+        onclick="cycleImage(this, 'set4')"
+        style="display: none" />
+      <img
+        src="https://napsg-web.s3.amazonaws.com/symbology/data/PNG9/lifelines/Communications/communications_financial-services-gray-halo_64x64.png"
+        alt=""
+        onclick="cycleImage(this, 'set4')"
+        style="display: none" />
+    </div>
+    <div class="image-set" id="set5">
+      <img
+        src="https://napsg-web.s3.amazonaws.com/symbology/data/PNG9/lifelines/Communications/communications_infrastructure-green-halo_64x64.png"
+        alt=""
+        onclick="cycleImage(this, 'set5')" />
+      <img
+        src="https://napsg-web.s3.amazonaws.com/symbology/data/PNG9/lifelines/Communications/communications_infrastructure-yellow-halo_64x64.png"
+        alt=""
+        onclick="cycleImage(this, 'set5')"
+        style="display: none" />
+      <img
+        src="https://napsg-web.s3.amazonaws.com/symbology/data/PNG9/lifelines/Communications/communications_infrastructure-red-halo_64x64.png"
+        alt=""
+        onclick="cycleImage(this, 'set5')"
+        style="display: none" />
+      <img
+        src="https://napsg-web.s3.amazonaws.com/symbology/data/PNG9/lifelines/Communications/communications_infrastructure-gray-halo_64x64.png"
+        alt=""
+        onclick="cycleImage(this, 'set5')"
+        style="display: none" />
+    </div>
+    <div class="image-set" id="set6">
+      <img
+        src="https://napsg-web.s3.amazonaws.com/symbology/data/PNG9/lifelines/Communications/communications_responder-communications-green-halo_64x64.png"
+        alt=""
+        onclick="cycleImage(this, 'set6')" />
+      <img
+        src="https://napsg-web.s3.amazonaws.com/symbology/data/PNG9/lifelines/Communications/communications_responder-communications-yellow-halo_64x64.png"
+        alt=""
+        onclick="cycleImage(this, 'set6')"
+        style="display: none" />
+      <img
+        src="https://napsg-web.s3.amazonaws.com/symbology/data/PNG9/lifelines/Communications/communications_responder-communications-red-halo_64x64.png"
+        alt=""
+        onclick="cycleImage(this, 'set6')"
+        style="display: none" />
+      <img
+        src="https://napsg-web.s3.amazonaws.com/symbology/data/PNG9/lifelines/Communications/communications_responder-communications-gray-halo_64x64.png"
+        alt=""
+        onclick="cycleImage(this, 'set6')"
+        style="display: none" />
+    </div>
+    <!-- Repeat for sets 2 through 6 -->
+  </body>
+</html>

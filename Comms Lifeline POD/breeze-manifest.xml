@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<breeze-manifest version="1.0"
+	xmlns="http://breeze.macromedia.com/ns/breeze-manifest" generator="ZB">
+	<document type="custom-pod" id="gov.fema.LifelineDashboard" version="1.0.001" minimumConnectServerVersion="11.2"/>
+	<assets>
+		<asset type="document-view">
+			<entry href="LifelineDashboard.htm" href-html5="LifelineDashboard.htm" />
+			<file href="LifelineDashboard.htm"/>
+			<file href="js/"/>
+			<file href="js/script.js"/>
+			<file href="js/syncScript.js"/>
+			<file href="css/"/>
+			<file href="css/style.css"/>
+			<file href="lib/"/>
+			<file href="lib/connect_customPodSDK.js"/>
+
+		</asset>
+	</assets>
+</breeze-manifest>
