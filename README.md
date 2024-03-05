@@ -16,9 +16,9 @@ Click the green `<>Code` button and then Click `Download .zip` from this GitHub 
 
 Open your Adobe Connect meeting room and navigate to the Share Pods section. If you don't have a Share Pod open, create a new one by selecting the "Share" option from the Pods menu.
 
-### Step 3: Download the Adobe SDK file `connect_customPodSDK.js` from console.adobe.io (see screenshots below) and place it in the `lib` folder.
+### Step 3: Download the Adobe SDK file `connect_customPodSDK.js` from console.adobe.io (see screenshots below) and place it in the `lib` folder under `Comss Lifeline POD`.
 
-### Step 4: 
+### Step 4: Go up one level to the `Comms Lifeline POD` folder. Select All an `Compress to .zip` 
 
 ### Step 5: Install the Dashoard
 Drag the `LifelineDashboard-main.zip` file directly into the Share Pod area of Adobe Connect. Adobe Connect will automatically recognize and install the Comms Lifeline Dashboard as a custom POD.
